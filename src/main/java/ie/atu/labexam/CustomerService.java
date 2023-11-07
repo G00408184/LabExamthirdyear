@@ -13,6 +13,6 @@ public class CustomerService {
     }
 
     public void getCustomerById(Customer customer){
-        System.out.println(CustomerI);
+        return customerService.customer.getCustomerId();
     }
 }

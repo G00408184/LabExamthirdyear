@@ -14,6 +14,7 @@ public class OrderController {
     @GetMapping("/order")
 
         public ArrayList<Order>CreateOrder(){
+        orderService.createOrder();
         return orderService.getOrderById();
         }
         
