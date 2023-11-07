@@ -7,9 +7,11 @@ import java.util.ArrayList;
 public class OrderService {
     ArrayList<Order> list = new ArrayList<>();
     public void createOrder(Order order){
+
         list.add(order);
     }
     public ArrayList<Order>getOrderById(){
+
         return list;
 
     }

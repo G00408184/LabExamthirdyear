@@ -9,11 +9,12 @@ import java.util.ArrayList;
 @AllArgsConstructor
 @RestController
 public class OrderController {
-    private final OrderService orderService;
+    private OrderService orderService;
 
     @GetMapping("/order")
 
-        public ArrayList<Order>getorder(){
+        public ArrayList<Order>CreateOrder(){
+        orderService.createOrder();
         return orderService.getOrderById();
         }
         
